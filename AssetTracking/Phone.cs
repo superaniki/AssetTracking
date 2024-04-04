@@ -1,16 +1,10 @@
+
+using System.Diagnostics.CodeAnalysis;
+
 namespace AssetTracking;
 
-
-public class Phone : Asset
+[method: SetsRequiredMembers]
+public class Phone(string brand, string model, DateTime dateOfPurchase, float price, Office office) : Asset(brand, model, dateOfPurchase, price, office)
 {
-  public Phone(string brand, string model, DateTime date, int price, string office, string currency)
-  {
-    Brand = brand;
-    Model = model;
-    DateOfPurchase = date;
-    Price = price;
-    Office = office;
-    Currency = currency;
-  }
 }
 

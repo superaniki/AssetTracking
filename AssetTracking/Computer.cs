@@ -1,14 +1,8 @@
+using System.Diagnostics.CodeAnalysis;
+
 namespace AssetTracking;
 
-public class Computer : Asset
+[method: SetsRequiredMembers]
+public class Computer(string brand, string model, DateTime date, int price, Office office) : Asset(brand, model, date, price, office)
 {
-  public Computer(string brand, string model, DateTime date, int price, string office, string currency)
-  {
-    Brand = brand;
-    Model = model;
-    DateOfPurchase = date;
-    Price = price;
-    Office = office;
-    Currency = currency;
-  }
 }
