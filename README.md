@@ -1,7 +1,9 @@
-Simple Asset tracking coding exercise, according to the tutor instructions below.
----------------------------------------------------------------------------
+# Asset tracking coding exercise, implemented in C#
 
-# Asset Tracking
+Tutor instructions below
+--------------------------------
+
+Asset Tracking
 This project is the start of an Asset Tracking database. 
 It should have input possibilities from a user and print out
 functionality of user data.
