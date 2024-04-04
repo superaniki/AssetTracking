@@ -1,4 +1,3 @@
-using System.Diagnostics.CodeAnalysis;
 
 namespace AssetTracking;
 
@@ -9,9 +8,8 @@ public class Asset
   public string Model { get; set; } = "";
   public DateTime DateOfPurchase { get; set; }
   public float Price { get; set; }
-  public required Office Office { get; set; }
+  public Office Office { get; set; }
 
-  [SetsRequiredMembers]
   public Asset(string brand, string model, DateTime dateOfPurchase, float price, Office office)
   {
     Brand = brand;
